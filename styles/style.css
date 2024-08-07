@@ -56,7 +56,6 @@ header h1 {
 
 #products {
     box-sizing: border-box;
-    border: 1px solid white;
     overflow: hidden;
     height: 350px;
 }
