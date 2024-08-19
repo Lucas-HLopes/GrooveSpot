@@ -7,13 +7,8 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     margin: 0px;
     color: white;
-<<<<<<< Updated upstream
-    background-image: linear-gradient(to bottom, lightblue, pink);
-    background-attachment: fixed;
-=======
     background-image: url(../images/wallpaper-background.JPG);
     background-size: cover;
->>>>>>> Stashed changes
 }
 
 nav {
