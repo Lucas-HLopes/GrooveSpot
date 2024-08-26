@@ -142,3 +142,18 @@ h1, h2, h3 {
 #main a {
     color: rgb(181,88,253);
 }
+
+.fav{
+    border: solid beige 5px;
+}
+
+.fav img{
+    /* border: 6px solid red; */
+    width: 40%;
+    height: auto;
+    padding: 6px;
+}
+
+.fav h1, h3{
+    /* comentar sobre a posição que ele deve ficar */
+}
