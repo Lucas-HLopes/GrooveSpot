@@ -88,19 +88,27 @@ nav a:hover {
     box-sizing: border-box;
 }
 
-.fav{
-    border: solid beige 5px;
+#product-cover {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10%;
+    width: 50%;
 }
 
-.fav img{
-    /* border: 6px solid red; */
-    width: 40%;
-    height: auto;
-    padding: 6px;
+#product-cover img {
+    width: 100%
 }
 
-.fav h1, h3{
-    /* comentar sobre a posição que ele deve ficar */
+#product-info {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+
+    width: 49%;
+    height: max-content;
+    padding: 20px;
+
+    background-color: rgb(90, 90, 90);
 }
 
 #product-section {
