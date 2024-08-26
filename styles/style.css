@@ -81,15 +81,29 @@ nav a:hover {
     display: inline-block;
 }
 
-
-#product-section {
+#product-page-section {
     background-color: rgba(45, 45, 45, 0.8);
     padding: 20px;
     border-bottom: 5px solid rgb(120, 120, 120);
     box-sizing: border-box;
 }
 
-#product-page-section {
+.fav{
+    border: solid beige 5px;
+}
+
+.fav img{
+    /* border: 6px solid red; */
+    width: 40%;
+    height: auto;
+    padding: 6px;
+}
+
+.fav h1, h3{
+    /* comentar sobre a posição que ele deve ficar */
+}
+
+#product-section {
     background-color: rgba(45, 45, 45, 0.8);
     padding: 20px;
     border-bottom: 5px solid rgb(120, 120, 120);
@@ -141,19 +155,4 @@ h1, h2, h3 {
 
 #main a {
     color: rgb(181,88,253);
-}
-
-.fav{
-    border: solid beige 5px;
-}
-
-.fav img{
-    /* border: 6px solid red; */
-    width: 40%;
-    height: auto;
-    padding: 6px;
-}
-
-.fav h1, h3{
-    /* comentar sobre a posição que ele deve ficar */
 }
