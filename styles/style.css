@@ -195,8 +195,10 @@ h1, h2, h3 {
 
 #bottons input[type="submit"]:hover{
     background-image: linear-gradient(rgb(195, 0, 255), rgb(213, 75, 255));
+    color: whitesmoke;
 }
 
 #bottons input[type="reset"]:hover{
-    background-image: linear-gradient(rgb(139, 0, 182), rgb(94, 0, 123));
+    background-image: linear-gradient(rgb(195, 0, 255), rgb(213, 75, 255));
+    color: whitesmoke;
 }
