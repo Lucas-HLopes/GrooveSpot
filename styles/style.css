@@ -83,16 +83,17 @@ nav a:hover {
 
 #product-page-section {
     background-color: rgba(45, 45, 45, 0.8);
-    padding: 20px;
     border-bottom: 5px solid rgb(120, 120, 120);
     box-sizing: border-box;
+
+    display: flex;
 }
 
 #product-cover {
-    display: inline-block;
-    box-sizing: border-box;
+    display: flexbox;
+
+    flex: 1;
     padding: 10%;
-    width: 50%;
 }
 
 #product-cover img {
@@ -100,15 +101,40 @@ nav a:hover {
 }
 
 #product-info {
-    display: inline-block;
-    box-sizing: border-box;
+    display: flexbox;
     vertical-align: top;
 
-    width: 49%;
-    height: max-content;
+    flex: 2;
     padding: 20px;
 
     background-color: rgb(90, 90, 90);
+}
+
+#product-info hr {
+    border: 2px solid rgb(120, 120, 120);
+}
+
+#product-info a {
+    display: block;
+    box-sizing: border-box;
+    width: 180px;
+    height: 40px;
+    margin: auto;
+
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+    background-color: rgb(181,88,253);
+    color: white;
+
+    text-decoration: none;
+}
+
+#product-info a:hover {
+    display: block;
+    background-color: rgb(208,160,255);
 }
 
 #product-section {
@@ -161,7 +187,7 @@ h1, h2, h3 {
     font-family: platypi, serif;
 }
 
-#main a {
+#product-section a, #content a {
     color: rgb(181,88,253);
 }
 
