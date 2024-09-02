@@ -256,6 +256,10 @@ h1, h2, h3 {
 }
 
 @media (max-width: 1199px) {
+    #products, #product-list {
+        columns: 3;
+    }
+    
     #main {
         width: 90%;
     }
