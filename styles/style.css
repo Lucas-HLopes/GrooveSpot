@@ -191,6 +191,10 @@ h1, h2, h3 {
     color: rgb(181,88,253);
 }
 
+#content p{
+    text-align: justify;
+}
+
 .fale b{
     align-self: flex-start;
     margin-bottom: 5px;
