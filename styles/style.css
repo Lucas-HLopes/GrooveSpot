@@ -107,6 +107,35 @@ nav a:hover {
     background-color: rgba(45, 45, 45, 0.6);
 }
 
+.news {
+    display: flex;
+    background-color: rgb(60, 60, 60);
+}
+
+.news-content {
+    display: flexbox;
+    border-bottom: 5px solid rgb(120, 120, 120);
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.news img {
+    display: flexbox;
+    float: left;
+    height: 150px;
+}
+
+.news p {
+    color: rgb(165, 165, 165);
+    font-size: small;
+    text-indent: 10px;
+}
+
+.news h3 {
+    color: white;
+}
+
 #product-page-section {
     background-color: rgba(45, 45, 45, 0.8);
     border-bottom: 5px solid rgb(120, 120, 120);
@@ -163,8 +192,6 @@ nav a:hover {
 
     background-color: rgb(181,88,253);
     color: white;
-
-    text-decoration: none;
 }
 
 #product-info a:hover {
@@ -273,4 +300,8 @@ h1, h2, h3 {
     background-color: rgba(45, 45, 45, 0.8);
     border-top: 5px solid rgb(120, 120, 120);
     padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
 }
