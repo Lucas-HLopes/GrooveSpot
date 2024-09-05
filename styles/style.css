@@ -238,7 +238,10 @@ nav a:hover {
 .card h3 {
     font-size: medium;
     height: 80px;
+    padding: 5px;
     text-overflow: ellipsis;
+
+    box-sizing: border-box;
 }
 
 .card img {
