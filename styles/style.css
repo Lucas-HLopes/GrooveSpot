@@ -21,7 +21,6 @@ body {
 header {
     background-color: rgb(181,88,253);
     padding: 30px 22%;
-    font-family: platypi, serif;
     box-sizing: border-box;
 
     width: 100%;
@@ -29,7 +28,7 @@ header {
 }
 
 header h1 {
-    font-size: xx-large;
+    font-size: 250%;
 }
 
 header img {
