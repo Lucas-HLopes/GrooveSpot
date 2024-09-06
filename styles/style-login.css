@@ -1,60 +1,80 @@
-*{
+@font-face {
+    font-family: platypi;
+    src: url("../fonts/Platypi-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: rubik;
+    src: url("../fonts/Rubik-VariableFont_wght.ttf");
+}
+
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-body{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-image: url(../images/wallpaper-horizontal.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../images/wallpaper-horizontal.JPG);
+    background-position: left;
     background-size: cover;
-    color: wheat;
+    background-attachment: fixed;
+    color: white;
+    font-family: rubik, Helvetica, sans-serif;
 }
-
-.container{
-    background-color: rgba(181,88,253, 0.5);
-    border-radius: 5px;
+.principal {
+    background-color: rgba(45, 45, 45, 0.6);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    overflow-y: auto; 
+    max-height: 90vh; 
+}
+.container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-    width: 100%;
+    flex-direction: column;
 }
-
-.card{
-    border-radius: 5px;
-    margin: 10px;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.title{
+.title {
     text-align: center;
-    margin-bottom: 20px;
+    color: white;
+}
+.box {
+    margin-bottom: 15px;
+}
+label {
+    margin-bottom: 5px;
+    color: white;
 }
 
-.card1, card2{
-    width: 55%;
+#textarea label{
+    display: block;
 }
 
-.card3{
-    width: 100%;
-}
-
-/* .card{
-    display: inline-block;
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="number"], select, textarea {
+    width: 100%; 
+    padding: 5px;
+    border: 1px solid #ccc;
     box-sizing: border-box;
-    width: 32%;
-    padding: 10px;
+    background-color: rgb(255, 255, 255);
 }
-.card1, .card2{
-    margin-left: 1%;
-} */
 
+input[type="submit"], input[type="reset"] {
+    background-color: rgb(181,88,253);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-image: linear-gradient(rgb(195, 0, 255), rgb(213, 75, 255));
+    color: whitesmoke;
+} 
+
+#bottons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
