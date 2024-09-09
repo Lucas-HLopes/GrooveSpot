@@ -115,6 +115,7 @@ nav a:hover {
 .news {
     display: flex;
     background-color: rgb(60, 60, 60);
+    margin: 15px;
 }
 
 .news-content {
@@ -123,6 +124,7 @@ nav a:hover {
     padding: 10px;
     box-sizing: border-box;
     overflow: hidden;
+    width: 100%;
 }
 
 .news img {
