@@ -22,6 +22,7 @@ body {
     background-attachment: fixed;
     color: white;
     font-family: rubik, Helvetica, sans-serif;
+    overflow-y: scroll;
 }
 .principal {
     background-color: rgba(45, 45, 45, 0.6);
