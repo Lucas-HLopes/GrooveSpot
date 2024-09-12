@@ -301,14 +301,6 @@ nav a:hover {
         border-left: 5px solid rgb(120, 120, 120);
         width: 500px;
     }
-
-    #products .class:nth-of-type(3) {
-        display: none;
-    }
-
-    #products .class:nth-of-type(4) {
-        display: none;
-    }
 }
 
 /* Menor resolução, acima, sem divisão por colunas */
@@ -382,7 +374,6 @@ nav a:hover {
 /* Página da Lista de Produtos */
 
 #product-list { 
-    columns: 5;
     text-align: center;
     background-color: rgba(45, 45, 45, 0.8);
     border-top: 5px solid rgb(120, 120, 120);
@@ -481,4 +472,27 @@ a {
     }
 }
 
-/* Número de Cards na página principal */
+/* Número de Cards na lista de produtos */
+@media (min-width: 1400px) {
+    #product-list {
+        columns: 5;
+    }
+}
+
+@media (max-width: 1399px) and (min-width: 993px) {
+    #product-list {
+        columns: 4;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 576px) {
+    #product-list {
+        columns: 3;
+    }
+}
+
+@media (max-width: 576px) {
+    #product-list {
+        columns: 2;
+    }
+}
