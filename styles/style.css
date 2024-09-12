@@ -1,3 +1,5 @@
+/* Fontes e Body */
+
 @font-face {
     font-family: platypi;
     src: url("../fonts/Platypi-VariableFont_wght.ttf");
@@ -18,6 +20,42 @@ body {
     background-attachment: fixed;
 }
 
+/* Cards de Produto */
+
+.card {
+    display: inline-block;
+    box-sizing: border-box;
+
+    background-color: rgb(90, 90, 90);
+    margin-bottom: 10px;
+    width: 200px;
+    height: 350px;
+    color: white;
+    overflow: hidden;
+}
+
+.card h3 {
+    font-size: medium;
+    height: 80px;
+    padding: 5px;
+    text-overflow: ellipsis;
+
+    box-sizing: border-box;
+}
+
+.card img {
+    display: block;
+    box-sizing: border-box;
+    width: 200px;
+    margin: auto;
+}
+
+.card .card-bottom {
+    border-top: 5px solid rgb(165, 165, 165);
+}
+
+/* Cabeçalho */
+
 header {
     background-color: rgb(181,88,253);
     padding: 30px 22%;
@@ -36,6 +74,8 @@ header img {
     float: left;
     margin-right: 20px;
 }
+
+/* Navegação */
 
 nav {
     background-color: rgba(45, 45, 45, 0.8);
@@ -90,6 +130,8 @@ nav a:hover {
     display: inline-block;
 }
 
+/* Parte principal e Layouts */
+
 #main {
     display: flex;
     box-sizing: border-box;
@@ -106,11 +148,19 @@ nav a:hover {
     flex-direction: column;
 }
 
+/* Conteúdo */
+
 #content {
     display: flexbox;
     padding: 25px;
     background-color: rgba(45, 45, 45, 0.6);
 }
+
+#content p{
+    text-align: justify;
+}
+
+/* Notícias na Página Principal */
 
 .news {
     display: flex;
@@ -145,17 +195,32 @@ nav a:hover {
     color: white;
 }
 
+/* Produtos na Página Principal */
+
+#product-section {
+    display: flexbox;
+    background-color: rgba(45, 45, 45, 0.8);
+    padding: 20px;
+    border-left: 5px solid rgb(120, 120, 120);
+    box-sizing: border-box;
+    width: 500px;
+}
+
+#products {
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    columns: 2;
+}
+
+/* Páginas de Produto */
+
 #product-page-section {
     background-color: rgba(45, 45, 45, 0.8);
     border-bottom: 5px solid rgb(120, 120, 120);
     box-sizing: border-box;
 
     display: flex;
-}
-
-#product-list {
-    columns: 5;
-    text-align: center;
 }
 
 #product-cover {
@@ -208,55 +273,17 @@ nav a:hover {
     background-color: rgb(208,160,255);
 }
 
-#product-section {
-    display: flexbox;
+/* Página da Lista de Produtos */
+
+#product-list { 
+    columns: 5;
+    text-align: center;
     background-color: rgba(45, 45, 45, 0.8);
-    padding: 20px;
-    border-left: 5px solid rgb(120, 120, 120);
-    box-sizing: border-box;
-    width: 500px;
+    border-top: 5px solid rgb(120, 120, 120);
+    padding-top: 20px;
 }
 
-#products {
-    box-sizing: border-box;
-    overflow: hidden;
-    text-align: center;
-    columns: 2;
-}
-
-.card {
-    display: inline-block;
-    box-sizing: border-box;
-
-    background-color: rgb(90, 90, 90);
-    margin-bottom: 10px;
-    width: 200px;
-    height: 350px;
-
-    text-align: center;
-    color: white;
-    overflow: hidden;
-}
-
-.card h3 {
-    font-size: medium;
-    height: 80px;
-    padding: 5px;
-    text-overflow: ellipsis;
-
-    box-sizing: border-box;
-}
-
-.card img {
-    display: block;
-    box-sizing: border-box;
-    width: 200px;
-    margin: auto;
-}
-
-.card .card-bottom {
-    border-top: 5px solid rgb(165, 165, 165);;
-}
+/* Elementos HTML no Geral */
 
 h1, h2, h3 {
     font-family: platypi, serif;
@@ -266,9 +293,11 @@ h1, h2, h3 {
     color: rgb(181,88,253);
 }
 
-#content p{
-    text-align: justify;
+a {
+    text-decoration: none;
 }
+
+/* Formulário de Contato */
 
 .fale b{
     align-self: flex-start;
@@ -306,14 +335,4 @@ h1, h2, h3 {
 #bottons input[type="reset"]:hover{
     background-image: linear-gradient(rgb(195, 0, 255), rgb(213, 75, 255));
     color: whitesmoke;
-}
-
-#product-list{
-    background-color: rgba(45, 45, 45, 0.8);
-    border-top: 5px solid rgb(120, 120, 120);
-    padding-top: 20px;
-}
-
-a {
-    text-decoration: none;
 }
