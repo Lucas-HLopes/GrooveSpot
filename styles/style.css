@@ -58,7 +58,6 @@ body {
 
 header {
     background-color: rgb(181,88,253);
-    padding: 30px 22%;
     box-sizing: border-box;
 
     width: 100%;
@@ -75,13 +74,34 @@ header img {
     margin-right: 20px;
 }
 
+/* Resolução maior, Header toma menos espaço */
+@media (min-width: 993px) {
+    header {
+        padding: 30px 20%;
+    }
+}
+
+/* Resolução menor, Header toma mais espaço */
+@media (max-width: 992px) {
+    header {
+        padding: 30px 10%;
+    }
+}
+
+/* Resolução mobile pequena, sem imagem */
+@media (max-width: 576px) {
+    header img {
+        display: none;
+    }
+}
+
 /* Navegação */
 
 nav {
     background-color: rgba(45, 45, 45, 0.8);
     margin: 0;
     border-top: 5px solid rgb(208,160,255);
-    height: 62px;
+    padding: 5px;
 }
 
 nav ul {
@@ -89,15 +109,13 @@ nav ul {
 
     list-style-type: none;
 
-    margin: 5px auto;
+    margin: auto;
     padding: 0;
-    width: 60%;
 
     text-align: center;
 }
 
 nav li {
-    text-align: center;
     color: white;
     letter-spacing: 1px;
     font-size: large;
@@ -110,14 +128,9 @@ nav a {
     text-decoration: none;
 
     height: 50px;
-    width: 32%;
-    margin: 2px;
 
     background-color: rgb(60, 60, 60);
-}
-
-nav a:nth-of-type(4) {
-    width: 5%;
+    text-align: center;
 }
 
 nav img {
@@ -130,6 +143,50 @@ nav a:hover {
     display: inline-block;
 }
 
+/* Resolução maior, Nav toma menos espaço */
+@media (min-width: 993px) {
+    nav ul {
+        width: 70%;
+    }
+    
+    nav a {
+        width: 33%;
+        margin: 2px;
+    }
+
+    nav a:nth-of-type(4) {
+        width: 60px;
+    }
+}
+
+/* Resolução menor, Nav toma mais espaço */
+@media (max-width: 992px) and (min-width: 769px) {
+    nav ul {
+        width: 95%;
+    }
+
+    nav a {
+        width: 33%;
+        margin: 2px;
+    }
+
+    nav a:nth-of-type(4) {
+        width: 60px;
+    }
+}
+
+/* Resolução mobile, Nav vertical */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 95%;
+        margin: 2px auto;
+    }
+}
+
 /* Parte principal e Layouts */
 
 #main {
@@ -137,15 +194,40 @@ nav a:hover {
     box-sizing: border-box;
 
     margin: 30px auto;
-    width: 80%;
-}
-
-.layout-1 {
-    flex-direction: row;
 }
 
 .layout-2 {
     flex-direction: column;
+}
+
+@media (min-width: 1500px) {
+    #main {
+        width: 1380px;
+    }
+
+    .layout-1 {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1499px) and (min-width: 993px) {
+    #main {
+        width: 95%;
+    }
+
+    .layout-1 {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 992px) {
+    #main {
+        width: 95%;
+    }
+
+    .layout-1 {
+        flex-direction: column-reverse;
+    }
 }
 
 /* Conteúdo */
@@ -201,16 +283,36 @@ nav a:hover {
     display: flexbox;
     background-color: rgba(45, 45, 45, 0.8);
     padding: 20px;
-    border-left: 5px solid rgb(120, 120, 120);
     box-sizing: border-box;
-    width: 500px;
 }
 
 #products {
     box-sizing: border-box;
     overflow: hidden;
     text-align: center;
-    columns: 2;
+}
+
+/* Maior resolução, do lado, 2 colunas */
+@media (min-width: 1400px) {
+    #products {
+        columns: 2;
+    }
+}
+
+/* Resolução média, do lado, 1 coluna */
+@media (min-width: 993px) {
+    #product-section {
+        border-left: 5px solid rgb(120, 120, 120);
+        width: 500px;
+    }
+}
+
+/* Menor resolução, acima, sem divisão por colunas */
+@media (max-width: 992px) {
+    #product-section {
+        border-bottom: 5px solid rgb(120, 120, 120);
+        width: 100%;
+    }
 }
 
 /* Páginas de Produto */
