@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
     background-image: url(../images/wallpaper-horizontal.JPG);
     background-position: left;
@@ -29,8 +29,6 @@ body {
     padding: 20px;
     width: 90%;
     max-width: 600px;
-    overflow-y: auto; 
-    max-height: 90vh; 
 }
 .container {
     display: flex;
