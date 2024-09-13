@@ -242,34 +242,82 @@ nav a:hover {
 .news {
     display: flex;
     background-color: rgb(90, 90, 90);
-    margin: 15px;
 }
 
 .news-content {
     display: flexbox;
     border-bottom: 5px solid rgb(120, 120, 120);
-    padding: 10px;
     box-sizing: border-box;
     overflow: hidden;
 
     width: 100%;
-    height: 150px;
 }
 
 .news img {
     display: flexbox;
     float: left;
-    height: 150px;
 }
 
 .news p {
     color: rgb(165, 165, 165);
     font-size: small;
     text-indent: 10px;
+    line-height: 0px;
 }
 
 .news h3 {
     color: white;
+}
+
+/* Resolução normal, notícias no tamanho padrão */
+@media (min-width: 769px) {
+    .news {
+        margin: 15px 40px;
+    }
+    
+    .news img {
+        height: 150px;
+    }
+
+    .news-content {
+        height: 150px;
+        padding: 10px;
+    }
+}
+
+/* Resolução mobile, notícias diminuem */
+@media (max-width: 768px) {
+    .news {
+        margin: 15px 20px;
+    }
+    
+    .news img {
+        height: 100px;
+    }
+
+    .news-content {
+        height: 100px;
+        padding: 5px;
+        
+    }
+
+    .news p {
+        line-height: 0px;
+    }
+
+    .news h3 {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 576px) {
+    .news {
+        margin: 15px 0;
+    }
+    
+    .news h3 {
+        line-height: 14px;
+    }
 }
 
 /* Produtos na Página Principal */
