@@ -389,10 +389,6 @@ nav a:hover {
     padding: 10%;
 }
 
-#product-cover img {
-    width: 100%
-}
-
 #product-info {
     display: flexbox;
     vertical-align: top;
@@ -401,6 +397,11 @@ nav a:hover {
     padding: 20px;
 
     background-color: rgb(90, 90, 90);
+}
+
+#product-cover img {
+    display: block;
+    margin: auto;
 }
 
 #product-info #info {
@@ -430,6 +431,36 @@ nav a:hover {
 #product-info a:hover {
     display: block;
     background-color: rgb(208,160,255);
+}
+
+@media (min-width: 993px) {
+    #product-page-section {
+        flex-direction: row;
+    }
+
+    #product-cover img {
+        width: 100%
+    }
+}
+
+@media (max-width: 992px) and (min-width: 577px) {
+    #product-page-section {
+        flex-direction: column;
+    }
+
+    #product-cover img {
+        width: 60%
+    }
+}
+
+@media (max-width: 576px) {
+    #product-page-section {
+        flex-direction: column;
+    }
+
+    #product-cover img {
+        width: 100%
+    }
 }
 
 /* Página da Lista de Produtos */
@@ -535,7 +566,7 @@ a {
 
 /* Número de Cards nos produtos da página principal */
 
-@media (max-width: 992px) and (min-width: 576px) {
+@media (max-width: 992px) and (min-width: 577px) {
     #products {
         columns: 3;
     }
