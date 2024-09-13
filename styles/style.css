@@ -23,11 +23,10 @@ body {
 /* Cards de Produto */
 
 .card {
-    display: inline-block;
     box-sizing: border-box;
 
     background-color: rgb(90, 90, 90);
-    margin-bottom: 10px;
+    margin: 0px auto 10px;
     color: white;
     overflow: hidden;
 }
@@ -284,26 +283,40 @@ nav a:hover {
 
 #products {
     box-sizing: border-box;
-    overflow: hidden;
     text-align: center;
 }
 
 /* Maior resolução, do lado, 2 colunas */
 @media (min-width: 1400px) {
+    #product-section {
+        border-left: 5px solid rgb(120, 120, 120);
+    }
+
     #products {
         columns: 2;
     }
 }
 
 /* Resolução média, do lado, 1 coluna */
-@media (min-width: 993px) {
+@media (min-width: 993px) and (max-width: 1399px) {
     #product-section {
         border-left: 5px solid rgb(120, 120, 120);
-        width: 500px;
+    }
+
+    #products {
+        columns: 1;
+    }
+
+    #products a:nth-of-type(3) .card {
+        display: none;
+    }
+
+    #products a:nth-of-type(4) .card {
+        display: none;
     }
 }
 
-/* Menor resolução, acima, sem divisão por colunas */
+/* Menor resolução, acima, divisão e display na parte de media de cards */
 @media (max-width: 992px) {
     #product-section {
         border-bottom: 5px solid rgb(120, 120, 120);
@@ -469,6 +482,32 @@ a {
 
     .card img {
         width: 140px;
+    }
+}
+
+/* Número de Cards nos produtos da página principal */
+
+@media (max-width: 992px) and (min-width: 576px) {
+    #products {
+        columns: 3;
+    }
+
+    #products a:nth-of-type(4) .card {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    #products {
+        columns: 2;
+    }
+
+    #products a:nth-of-type(3) .card {
+        display: none;
+    }
+
+    #products a:nth-of-type(4) .card {
+        display: none;
     }
 }
 
