@@ -179,6 +179,30 @@ nav a:hover {
     nav a {
         width: 95%;
         margin: 2px auto;
+        height: 40px;
+    }
+
+    nav img {
+        height: 20px;
+    }
+}
+
+/* Resolução mobile pequena, mudança de fonte e altura de botões */
+@media (max-width: 576px) {
+    nav a {
+        height: 35px;
+    }
+
+    nav a:hover {
+        height: 35px;
+    }
+
+    nav li {
+        font-size: 15px;
+    }
+
+    nav img {
+        height: 15px;
     }
 }
 
