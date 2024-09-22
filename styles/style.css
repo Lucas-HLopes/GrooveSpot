@@ -638,3 +638,109 @@ a {
         columns: 2;
     }
 }
+
+/* Formulário de registro */
+
+.principal-form{
+    background-color: rgba(45, 45, 45, 0.6);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+.box {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: white;
+}
+
+#textarea label{
+    display: block;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="number"], select, textarea {
+    width: 100%; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: rgb(181,88,253);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-image: linear-gradient(rgb(195, 0, 255), rgb(213, 75, 255));
+    color: whitesmoke;
+} 
+
+#bottons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (min-width: 769px) {
+    .principal-form {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        width: 150px;
+        font-size: 18px;
+    }
+}
+
+/* Resolução tablets (menor que 769px) */
+@media (max-width: 768px) {
+    .principal-form {
+        width: 95%;
+        max-width: 500px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        width: 130px;
+        font-size: 16px;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="number"], select, textarea {
+        font-size: 14px;
+    }
+}
+
+/* Resolução mobile grande (menor que 576px) */
+@media (max-width: 576px) {
+    .principal-form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        width: 120px;
+        font-size: 14px;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="number"], select, textarea {
+        font-size: 12px;
+    }
+}

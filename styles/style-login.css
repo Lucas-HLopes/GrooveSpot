@@ -24,23 +24,28 @@ body {
     font-family: rubik, Helvetica, sans-serif;
     overflow-y: scroll;
 }
-.principal {
+
+.principal-form{
     background-color: rgba(45, 45, 45, 0.6);
     padding: 20px;
     width: 90%;
     max-width: 600px;
 }
+
 .container {
     display: flex;
     flex-direction: column;
 }
+
 .title {
     text-align: center;
     color: white;
 }
+
 .box {
     margin-bottom: 15px;
 }
+
 label {
     margin-bottom: 5px;
     color: white;
