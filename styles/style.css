@@ -265,6 +265,10 @@ nav a:hover {
     text-align: justify;
 }
 
+#content ul li{
+    text-align: justify;
+}
+
 /* Notícias na Página Principal */
 
 .news {
@@ -757,3 +761,4 @@ input[type="submit"]:hover, input[type="reset"]:hover {
         font-size: 12px;
     }
 }
+
